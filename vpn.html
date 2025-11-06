@@ -1,246 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRONZE VPN - Бесплатные конфигурации</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #8B4513, #D2691E);
-            color: white;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-        }
-
-        .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #CD7F32;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .subtitle {
-            color: #FFD700;
-            margin-top: 10px;
-            font-size: 1.2rem;
-        }
-
-        .server-list {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .server-card {
-            background: rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #CD7F32;
-            backdrop-filter: blur(10px);
-        }
-
-        .server-header {
-            display: flex;
-            justify-content: between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .server-name {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #FFD700;
-        }
-
-        .server-location {
-            background: rgba(205, 127, 50, 0.3);
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
-
-        .config-box {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .config-text {
-            font-family: 'Courier New', monospace;
-            font-size: 0.85rem;
-            word-break: break-all;
-            color: #fff;
-        }
-
-        .copy-btn {
-            background: linear-gradient(45deg, #CD7F32, #FFD700);
-            color: black;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .copy-btn:hover {
-            transform: scale(1.05);
-        }
-
-        .instructions {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            color: #ccc;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 2rem;
-            }
-            
-            .config-text {
-                font-size: 0.75rem;
-            }
-        }
-    </style>
+    <title>BRONZE VPN</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">BRONZE VPN</div>
-        <div class="subtitle">Бесплатные конфигурации серверов</div>
-    </div>
+    <h1>BRONZE VPN</h1>
+    
+    <h2>NETHERLANDS • Reality</h2>
+    <textarea rows="3" cols="100">vless://afec3ccb-b294-450e-af03-b6b9c6bf29a4@147.45.234.51:443?type=tcp&security=reality&pbk=GjFTD96cethyxcRuToHUwv741QoDB9-V7LRsxEh6jTU&fp=chrome&sni=www.vk.com&sid=ab1cd2&spx=%2F&flow=xtls-rprx-vision</textarea>
 
-    <div class="server-list">
-        <!-- Сервер 1 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">NETHERLANDS • Reality</div>
-                <div class="server-location">Нидерланды</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">vless://afec3ccb-b294-450e-af03-b6b9c6bf29a4@147.45.234.51:443?type=tcp&security=reality&pbk=GjFTD96cethyxcRuToHUwv741QoDB9-V7LRsxEh6jTU&fp=chrome&sni=www.vk.com&sid=ab1cd2&spx=%2F&flow=xtls-rprx-vision</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
+    <h2>UAE • TCP</h2>
+    <textarea rows="3" cols="100">vless://2558c819-1363-4859-8fb9-f8cb104d49d2@176.223.66.8:39948?encryption=none&headerType=http&host=m.vk.com&security=none&type=tcp</textarea>
 
-        <!-- Сервер 2 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">UAE • TCP</div>
-                <div class="server-location">ОАЭ</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">vless://2558c819-1363-4859-8fb9-f8cb104d49d2@176.223.66.8:39948?encryption=none&headerType=http&host=m.vk.com&security=none&type=tcp</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
+    <h2>RUSSIA • WebSocket</h2>
+    <textarea rows="3" cols="100">vless://88b9a025-929f-582f-a10c-1e87718cac3f@109.205.56.37:5000?path=%2F&security=&encryption=none&host=ozon.ru&type=ws</textarea>
 
-        <!-- Сервер 3 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">RUSSIA • WebSocket</div>
-                <div class="server-location">Россия</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">vless://88b9a025-929f-582f-a10c-1e87718cac3f@109.205.56.37:5000?path=%2F&security=&encryption=none&host=ozon.ru&type=ws</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
+    <h2>GERMANY • WebSocket</h2>
+    <textarea rows="3" cols="100">vless://199a78a5-b4d4-4064-a0db-bb37c5839134@212.192.31.146:443?path=%2Fpanika&security=&encryption=none&host=m.vk.com&type=ws</textarea>
 
-        <!-- Сервер 4 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">GERMANY • WebSocket</div>
-                <div class="server-location">Германия</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">vless://199a78a5-b4d4-4064-a0db-bb37c5839134@212.192.31.146:443?path=%2Fpanika&security=&encryption=none&host=m.vk.com&type=ws</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
+    <h2>LATVIA • WebSocket</h2>
+    <textarea rows="3" cols="100">vless://393044fb-755a-4623-965e-3ae4fe39d730@83.222.20.64:53299?path=%2F&security=&encryption=none&host=www.vk.com&type=ws</textarea>
 
-        <!-- Сервер 5 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">LATVIA • WebSocket</div>
-                <div class="server-location">Латвия</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">vless://393044fb-755a-4623-965e-3ae4fe39d730@83.222.20.64:53299?path=%2F&security=&encryption=none&host=www.vk.com&type=ws</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
-
-        <!-- Сервер 6 -->
-        <div class="server-card">
-            <div class="server-header">
-                <div class="server-name">FRANCE • Shadowsocks</div>
-                <div class="server-location">Франция</div>
-            </div>
-            <div class="config-box">
-                <div class="config-text">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOUFktZE9WQUpoMUU1WnJoakJ4S1Jn@45.95.233.133:1080</div>
-                <button class="copy-btn" onclick="copyConfig(this)">Скопировать</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="instructions">
-        <h3>📋 Как использовать:</h3>
-        <p>1. Установите клиент VPN (v2rayNG, Shadowrocket, Nekoray и т.д.)</p>
-        <p>2. Нажмите "Скопировать" для нужного сервера</p>
-        <p>3. Вставьте конфигурацию в приложение</p>
-        <p>4. Подключайтесь и пользуйтесь!</p>
-    </div>
-
-    <div class="footer">
-        <p>BRONZE VPN &copy; 2024 | Бесплатные конфигурации для обхода блокировок</p>
-    </div>
-
-    <script>
-        function copyConfig(button) {
-            const configText = button.previousElementSibling.textContent;
-            navigator.clipboard.writeText(configText).then(() => {
-                const originalText = button.textContent;
-                button.textContent = 'Скопировано!';
-                button.style.background = '#4CAF50';
-                
-                setTimeout(() => {
-                    button.textContent = originalText;
-                    button.style.background = '';
-                }, 2000);
-            }).catch(err => {
-                console.error('Ошибка копирования: ', err);
-                button.textContent = 'Ошибка!';
-                button.style.background = '#f44336';
-            });
-        }
-    </script>
+    <h2>FRANCE • Shadowsocks</h2>
+    <textarea rows="3" cols="100">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOUFktZE9WQUpoMUU1WnJoakJ4S1Jn@45.95.233.133:1080</textarea>
 </body>
 </html>
